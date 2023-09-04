@@ -1,0 +1,162 @@
+
+.searchResultBox {
+    margin: 20px;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center; /* 아이템들을 컨테이너의 가로 중앙에 정렬 */
+    padding: 0 25%;
+
+}
+
+.left-column {
+    flex: 1;
+    background-color: #f9fafc;
+    color: #333;
+    border-bottom: 1px solid #e0e2e6;
+
+}
+
+.left-column .row1 {
+    border-bottom: 1px solid #e0e2e6;
+}
+
+.right-column {
+    flex: 3;
+}
+
+.right-column .row {
+    border-bottom: 1px solid #e0e2e6;
+}
+
+
+.left-column .row1 {
+    /*padding-bottom: 1px;*/
+    height: calc(100% / 6);
+}
+
+.left-column .row2 {
+    height: calc(100% / 6 * 5);
+}
+
+.right-column.row1, .right-column.row2, .right-column.row3, .right-column.row4,
+.right-column.row5, .right-column.row6 {
+    height: calc(100% / 6);
+}
+
+.left-column .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-group {
+    display: flex;
+    font-size: 14px;
+}
+
+/* Additional styling (adjust as needed) */
+.right-column input[type="text"],
+.right-column select {
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #e0e2e6;
+    border-width: 1px;
+}
+
+
+.right-column .row6 label {
+    margin: 10px 10px;
+
+}
+
+.right-column input[type="checkbox"] {
+    margin-right: 10px;
+    color: #e0e2e6;
+}
+
+.search_button {
+    display: block; /* 블록 요소로 설정하여 가로 정렬 적용 */
+    margin: 20px auto; /* 가로 중앙 정렬 */
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    background-color: blue;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchResultRow {
+  /*display: inline-block;*/
+    display: inline-table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.searchResultRow .row {
+    display: table-row;
+}
+
+.cell.title {
+    display: table-cell;
+    border: 1px solid transparent;
+    padding: 15px;
+    text-align: center;
+    background-color: #f3f5f7;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid #f0f0f0;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    /* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+    .cell {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 3%;
+    }
+
+    .h1 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 화면 너비가 480px 이하일 때 적용되는 스타일 */
+    .cell {
+        width: 30%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 3%;
+    }
+
+    .h1 {
+        margin-top: 10px;
+    }
+}

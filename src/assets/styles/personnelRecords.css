@@ -1,0 +1,163 @@
+/* 인사기록카드, 재직증명서 */
+
+.personnelRecord-container{
+    width: 210mm;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin-top: 140px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.workDocument-container,.careerDocument-container  {
+    width: 210mm;
+    /*height: 297mm;*/
+    height: 100%;
+
+    background-color: #f0f0f0;
+    margin-top: 140px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.inner {
+    width: 95%; /* 표의 너비를 100%로 설정합니다. */
+    padding: 0 20px;
+}
+
+.photo-cell {
+    /* 증명사진 크기로 조정 */
+    overflow: hidden;
+    width: 150px; /* 가로 크기 설정 */
+    background-color: #ccc; /* 배경색 지정 */
+}
+
+.photo-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+/* 표 스타일 */
+.table {
+    width: 100%; /* 표의 너비를 100%로 설정합니다. */
+    border-collapse: collapse; /* 셀의 경계를 합쳐 하나의 경계로 만듭니다. */
+    background-color: white;
+}
+
+.page_break_after {
+    /*page-break-after: always;*/
+    display: block;
+    clear: both;
+}
+
+
+/* 표 헤더와 셀 스타일 */
+.table th {
+    padding: 10px; /* 셀의 내부 여백을 설정합니다. */
+    border: 1px solid #ccc; /* 셀의 테두리를 1px의 실선으로 설정합니다. */
+    text-align: center;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 14px;
+    color: #000;
+}
+
+.table td {
+    width: 21mm;
+    padding: 8px; /* 셀의 내부 여백을 설정합니다. */
+    border: 1px solid #ccc; /* 셀의 테두리를 1px의 실선으로 설정합니다. */
+    text-align: center;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 14px;
+    color: #000;
+}
+
+.title_h3_center {
+    text-align: center;
+    /*position: absolute; !* 절대 위치로 설정 *!*/
+    /*top: 70%; !* 상단 기준으로 50% 위치 *!*/
+    /*left: 50%; !* 좌측 기준으로 50% 위치 *!*/
+    /*transform: translate(-50%, -50%); !* 좌측, 상단으로 50%만큼 이동하여 수평 가운데 정렬 *!*/
+}
+
+.table_div_text {
+    margin-top: 50px;
+}
+
+.table_div_com {
+    margin-left: 230px;
+    margin-top: 100px;
+    letter-spacing: 2px;
+}
+
+
+.title_h3_today {
+    margin-top: 100px;
+}
+
+.table tbody th {
+    background-color: #f0f0f0; /* 헤더 셀의 배경색을 설정합니다. */
+}
+
+/* 병합된 셀 스타일 */
+/*.table td[colspan="2"],*/
+/*.table td[rowspan="3"] {*/
+/*    background-color: white; !* 병합된 셀의 배경색을 설정합니다. *!*/
+/*    text-align: center; !* 병합된 셀의 텍스트를 가운데로 정렬합니다. *!*/
+/*}*/
+
+.section {
+    width: 100%; /* 표의 너비를 100%로 설정합니다. */
+}
+
+
+/* 나머지 셀들을 우측에 정렬 */
+.table tr td:not(.photo-cell) {
+    text-align: center;
+}
+
+.table_div {
+    margin-top: 20px;
+    padding : 15px;
+}
+.table_div_career {
+    margin-top: -17px;
+    padding : 0 15px;
+}
+
+.table_div_work {
+    margin-top: 100px;
+}
+
+/* 각 열에 대한 클래스에 스타일을 설정 */
+.table_div .table.reward .col-1,
+.table_div .table.disciplinary .col-1,
+.table_div .table.term .col-1 {
+    width: 15%;
+}
+
+.table_div .table.reward .col-2,
+.table_div .table.disciplinary .col-2,
+.table_div .table.term .col-2 {
+    width: 20%;
+}
+
+.table_div .table.reward .col-3,
+.table_div .table.disciplinary .col-3,
+.table_div .table.term .col-3 {
+    width: 20%;
+}
+
+.table_div .table.reward .col-4,
+.table_div .table.disciplinary .col-4,
+.table_div .table.term .col-4 {
+    width: 25%;
+}
+
+.table_div .table.reward .col-5,
+.table_div .table.disciplinary .col-5,
+.table_div .table.term .col-5 {
+    width: 20%;
+}

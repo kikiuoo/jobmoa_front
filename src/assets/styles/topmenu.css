@@ -1,0 +1,151 @@
+/* 메뉴 영역 전체 컨테이너 */
+.menu-wrapper {
+    /* 부모 요소를 기준으로 고정된 위치로 설정 */
+    position: fixed;
+    /* 다른 요소들보다 위에 위치하도록 z-index 설정 */
+    z-index: 100;
+    /* 가로로 정렬되도록 inline-block으로 설정 */
+    display: inline-block;
+    /* 가로 너비를 100%로 설정하여 화면 전체를 차지 */
+    width: 100%;
+    /* 높이를 80px로 설정 */
+    height: 80px;
+    /* 배경색 설정 */
+    background-color: #4066ff;
+}
+
+/* 상단 메뉴 영역 */
+.top-menu {
+    /* 가로로 정렬되도록 flex로 설정 */
+    display: flex;
+    /* 우측 정렬되도록 justify-content 설정 */
+    justify-content: flex-end;
+    /* 세로로 가운데 정렬되도록 align-items 설정 */
+    align-items: center;
+    /* 높이를 100%로 설정하여 메뉴 영역을 채움 */
+    height: 100%;
+    /* 좌우 여백을 100px로 설정 */
+    margin : 0 100px;
+}
+
+/* 로고 박스 */
+.logo-box {
+    /* 수직 가운데 정렬되도록 vertical-align 설정 */
+    vertical-align: center;
+    /* 절대적인 위치로 설정 */
+    position: absolute;
+    /* 높이를 50px로 설정 */
+    height: 50px;
+    /* 너비를 150px로 설정 */
+    width: 150px;
+    /* 좌우 가운데 정렬되도록 설정 */
+    top: 50%;
+    left: 15%;
+    /* 이동하여 수직, 수평으로 가운데로 맞춤 */
+    transform: translate(-50%, -50%);
+}
+
+/* 로고 이미지 */
+.logoImg {
+    /* 절대적인 위치로 설정 */
+    position: absolute;
+    /* 너비를 120px로 설정 */
+    width: 120px;
+    /* 높이를 100%로 설정하여 로고 박스의 높이에 맞춤 */
+    height: 100%;
+    /* 가운데 정렬되도록 설정 */
+    top: 50%;
+    /* 좌측에서 50% 위치로 설정 */
+    left: 38%;
+    /* 이동하여 수직, 수평으로 가운데로 맞춤 */
+    transform: translate(-50%, -50%);
+}
+
+/* 메뉴 리스트 */
+.menu_list {
+    /* 목록 스타일 초기화 */
+    list-style: none;
+    /* 가로로 정렬되도록 flex로 설정 */
+    display: flex;
+    /* 높이를 100%로 설정하여 메뉴 영역을 채움 */
+    height: 100%;
+}
+
+/* 메뉴 리스트 아이템 */
+.menu_list li {
+    align-items: center;
+    height: 100%;
+}
+
+/* 메뉴 버튼 링크 */
+.menu_list li a{
+    /* 링크 스타일 초기화 */
+    text-decoration: none;
+    /* 폰트 색상을 검은색으로 설정 */
+    color: #000;
+
+    /* 상대적인 위치 지정을 위해 position 속성 사용 */
+    position: relative;
+    /* 폰트 굵기를 bold로 설정 */
+    font-weight: bold;
+
+}
+
+/* 클릭되지 않은 메뉴 버튼 */
+.menu-button {
+    /* 버튼 스타일 초기화 */
+    border: none;
+    /* 버튼의 모서리를 둥글게 설정 */
+    border-radius: 5px;
+    /* 커서 스타일을 포인터로 설정하여 마우스를 올렸을 때 포인터로 보이도록 함 */
+    cursor: pointer;
+    /* 텍스트 가운데로 정렬되도록 설정 */
+    text-align: center;
+    /* 버튼의 높이를 텍스트의 높이에 맞춤 */
+    height: fit-content;
+    /* 폰트 색상을 검은색으로 설정 */
+    color: #000;
+    /* 버튼 너비를 120px로 설정 */
+    width: 120px;
+    /* 폰트 크기를 15px로 설정 */
+    font-size: 15px;
+    /* 상대적인 위치 지정을 위해 position 속성 사용 */
+    position: relative;
+    /* 폰트 굵기를 bold로 설정 */
+    font-weight: bold;
+    /* 배경색을 투명으로 설정 */
+    background-color: transparent;
+}
+
+/* 클릭된 메뉴 버튼 */
+.menu-button.active {
+    /* 선택된 버튼 스타일 */
+    width: 120px;
+    /* 높이를 메뉴 영역의 75%로 설정 */
+    height: 100%;
+    /* 메뉴 영역의 상단 0% 위치로 설정 */
+    /*top: 0%;*/
+    /* 배경색을 노란색으로 설정 */
+    background-color: #ffcc00;
+    /* 투명도를 0.8로 설정하여 투명도 조절 */
+    opacity: 0.8;
+    /* 글자색을 검은색으로 설정 */
+    color: black;
+    /* 폰트 크기를 15px로 설정 */
+    font-size: 15px;
+    /* 좌측 상단 모서리를 둥글게 만들기 위해 설정 */
+    border-top-left-radius: 40%;
+    /* 우측 상단 모서리를 둥글게 만들기 위해 설정 */
+    border-top-right-radius: 40%;
+}
+
+
+/* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+@media screen and (max-width: 768px) {
+    /* 화면 너비가 768px 이하일 때 추가적인 스타일을 설정할 수 있음 */
+}
+
+/* 화면 너비가 480px 이하일 때 적용되는 스타일 */
+@media screen and (max-width: 480px) {
+    /* 화면 너비가 480px 이하일 때 추가적인 스타일을 설정할 수 있음 */
+}

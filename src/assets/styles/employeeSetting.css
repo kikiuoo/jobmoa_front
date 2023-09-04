@@ -1,0 +1,121 @@
+/* 인사기록카드 > 검색하는 공간 */
+
+.setting-container {
+    position: fixed;
+    background-color: #f0f0f0;
+    display: flex;
+    height: 120px;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    flex: 1;
+    padding: 20px;
+}
+
+.search-input {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 200px;
+}
+
+button{
+    cursor: pointer;
+}
+.search-input button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 80px;
+}
+
+.search-input button:hover {
+    background-color: rgba(0, 51, 255, 0.42);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 80px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.button-grid-admin {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button-grid-admin button.modify {
+    background-color: #e07e9c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #565151;
+    border: 1px solid transparent;
+}
+.button-grid-admin button.modify:hover {
+    background-color: #e07e9c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.button-grid-admin button.delete {
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #565151;
+    border: 1px solid transparent;
+}
+.button-grid-admin button.delete:hover {
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.button-grid button{
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.button-grid button:hover {
+    background-color: rgba(0, 51, 255, 0.42);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+select{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}

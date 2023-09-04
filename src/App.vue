@@ -1,26 +1,23 @@
+<!--
+동작 : 3. 최상위 컴포넌트인 App.vue 파일입니다. 애플리케이션의 레이아웃과 라우터 뷰를 포함한 전역 컴포넌트를 관리합니다.
+-->
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+<!--    <TopMenu></TopMenu>-->
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import TopMenu from "@/components/TopMenu.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    // TopMenu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
